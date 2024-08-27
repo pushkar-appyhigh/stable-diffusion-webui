@@ -444,7 +444,7 @@ def prepare_environment():
     if "--exit" in sys.argv:
         print("Exiting because of --exit argument")
         exit(0)
-    run(f'"{python}" -m pip install {setproctitle}', "Installing setproctitle", "Couldn't install torch", live=True)
+    run(f'"{python}" -m pip install setproctitle', "Installing setproctitle", "Couldn't install torch", live=True)
     import setproctitle
     setproctitle.setproctitle('automatic1111')
 
