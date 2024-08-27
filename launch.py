@@ -1,6 +1,4 @@
 from modules import launch_utils
-import setproctitle
-setproctitle.setproctitle('automatic1111')
 
 args = launch_utils.args
 python = launch_utils.python

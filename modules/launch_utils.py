@@ -444,6 +444,10 @@ def prepare_environment():
     if "--exit" in sys.argv:
         print("Exiting because of --exit argument")
         exit(0)
+    
+    import setproctitle
+    setproctitle.setproctitle('automatic1111')
+
 
 
 def configure_for_tests():
